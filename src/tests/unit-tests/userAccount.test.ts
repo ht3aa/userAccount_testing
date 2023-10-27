@@ -11,7 +11,9 @@ const getUsersFile = path.join(folderPath, "getUsers.ts");
 describe("user account service files", () => {
   it(`should check if "createUserFile" exists in "src/services" directory`, async () => {
     try {
-      await fs.access(createUserFile);
+       await fs.access(createUserFile);
+      //expect(file).toBe(null)
+
     } catch (err) {
       expect(err).toBe(null);
     }
